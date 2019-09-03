@@ -1,0 +1,33 @@
+body{
+    background-image: url("../assets/Fichier1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(52,21,76);
+}
+#nav-top{
+    background: rgba(0, 0, 0, .2);
+}
+#todosContainer{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    max-width: 700px;
+}
+#newFormContainer{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+#editFormContainer{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.checkForm{
+    width: 0px;
+    transition: 0.2s linear;
+    opacity: 0;
+} 
+.todo:hover .checkForm{
+    width: 30px;
+    opacity: 1.0;
+    margin-right: .5rem
+}

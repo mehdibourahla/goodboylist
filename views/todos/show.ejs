@@ -1,0 +1,9 @@
+<% include ../partials/header.ejs %>
+<h1 class="display-3 text-light" style="margin-top: 100px">Show a todo Page !</h1>
+<div class="container">
+    <p><%= todo.task %></p>
+    <small class="text-muted"><%= todo.created.toISOString().split('T')[0] %></small>
+    <p><%= todo.description %></p>
+    <span class="text-danger"><%= todo.deadline.toISOString().split('T')[0] %></span>
+</div>
+<% include ../partials/footer.ejs %>
