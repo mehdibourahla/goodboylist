@@ -1,7 +1,12 @@
 <% include ../partials/header.ejs %>
 
 <div class="container " id="todosContainer">
-    <h3 class="text-light">Tasks</h3>
+    <div class="d-flex justify-content-between">
+        <h3 class="text-light">Tasks</h3>
+        <a href="/todos/new" class="text-light mr-4">
+            <i class="fa fa-plus fa-lg" aria-hidden="true"></i>
+        </a>
+    </div>
     <ul class="list-group list-group-flush border rounded">
         <% todos.forEach(function(todo){ %>
             <li class="list-group-item pl-3 todo">

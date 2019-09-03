@@ -5,7 +5,7 @@ var passport = require('passport');
 var middleware = require('../middleware');
 
 router.get("/",function(req,res){
-    res.render("landing");
+    res.redirect("/todos");
 });
 
 router.get("/register",middleware.canLog,function(req,res){
